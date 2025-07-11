@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!--Logo-->
+        <a href="index.html" class="logo"> Kenny </a>
+
+        <!--Hamburger Menu-->
+        <button class="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!--Links-->
+
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!--Social Icons-->
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Kenny Nkosi</h1>
+          <h2>IT Graduate and Web developer</h2>
+          <p>
+            Motivated and goal-driven Information Technology graduate from
+            Richfield Graduate Institute of Technology with a passion for
+            solving real-world problems through software.
+          </p>
+           <div class="hero-btn">
+          <a href="about.html">About me</a>
+        </div>
+        </div>
+       
+        <div class="hero-image-wrapper">
+          <div class="hero-image-bg">
+            <img
+              src="./images/selfie1-removebg-preview.png"
+              alt="Kenny Nkosi"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

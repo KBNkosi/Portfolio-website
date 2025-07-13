@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!--Logo-->
+        <a href="index.html" class="logo"> Kenny </a>
+
+        <!--Hamburger Menu-->
+        <button class="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!--Links-->
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html"  aria-current="page">Contact</a></li>
+        </ul>
+
+        <!--Social Icons-->
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+ <section class="contact-section">
+  <div class="container contact-container">
+    <address class="contact-info">
+      <h2>Contact Me</h2>
+      <p>
+        I’m open to freelance opportunities and collaborations.<br />
+        Fill out the form or email me directly.
+      </p>
+      <ul class="contact-detals">
+        <li>
+          <a href="mailto: nkosikenny9@gmail.com">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+            nkosikenny9@gmail.com
+          </a>
+        </li>
+        <li class="fa-solid fa-phone fa-lg"></li>
+        +27 67 281 2905
+        <li>
+            <i  class="fa-solid fa-location-dot"></i>
+            Johannesburg, South Africa</li>
+      </ul>
+    </address>
+    <form class="contact-form" method="post" autocomplete="on">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required >
+        </div>
+        <div class="form-group">
+            <label for="message">Your message</label>
+            <textarea  id="message" name="message" required></textarea>
+        </div>
+        <button class="hero-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+    
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,7 +17,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <div class="container nav-container">
+        <nav class="navbar">
         <!--Logo-->
         <a href="index.html" class="logo"> Kenny </a>
 
@@ -35,14 +36,16 @@
         </ul>
         
         <!--Download CV-->
-        <div class="hero-btn">
-          <a href="about.html">Download CV</a>
+        <div class="nav-btn">
+          <a href="about.html">Resume</a>
           
         </div>
         
       </nav>
+      </div>
+     
     </header>
-
+  <main>
     <section class="hero">
       <div class="hero-content">
         <div class="hero-text">
@@ -53,11 +56,7 @@
             Richfield Graduate Institute of Technology with a passion for
             solving real-world problems through software.
           </p>
-           <div class="hero-btn">
-          <a href="about.html">Contact me</a>
-          
-        </div>
-        <!--Social Icons-->
+          <!--Social Icons-->
         <ul class="social-icons">
           <li>
             <a href="#"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
@@ -69,6 +68,11 @@
             <a href="#"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
           </li>
         </ul>
+           <div class="hero-btn">
+          <a href="about.html">Contact me</a>
+          
+        </div>
+        
         </div>
        
         <div class="hero-image-wrapper">
@@ -82,6 +86,35 @@
         </div>
       </div>
     </section>
+
+    <section class="about" name="about">
+    <h1>About Me</h1>
+    <div class="container ">
+      <div class="about__card">
+        <img src="" alt="">
+        <h2></h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="about__content">
+        <div class="about__tabs">
+          <input type="radio" id="tab-education" name="about-tabs" checked />
+          <label for="tab-education">Education</label>
+
+           <input type="radio" id="tab-certification" name="about-tabs" />
+      <label for="tab-certification">Certification</label>
+
+      <input type="radio" id="tab-experience" name="about-tabs" />
+      <label for="tab-experience">Experience</label>
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+    
 
     <script>
       const navToggle = document.querySelector(".nav-toggle");

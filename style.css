@@ -63,9 +63,6 @@ a{
 
 }
 
-a:hover{
-    color: var(--clr-primary-hover);
-}
 
 h1,h2,h3{
     font-family: var(--ff-heading)
@@ -81,20 +78,28 @@ img{
  *******************/
 
 /* Navigation Bar*/
-
+.nav-container{
+    padding-top: var(--space-md);
+}
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
     padding: var(--space-sm);
-    background-color: var(--clr-bg);
+    box-shadow: var(--shadow);
+    background-color: #171717;
+    color: white;
+    border-radius: 50px;
+    max-width: 950px;
+    height: 50px;
 }
 
 .logo{
  font-family: var(--ff-heading);
  font-weight: 700;
  font-size: 1.5rem;
- color: var(--clr-text);
+ color: white;
 }
 
 
@@ -111,16 +116,12 @@ img{
     position: relative;
     text-decoration: none;
     font-weight: 600;
-    color: var(--clr-text);
+    color: white;
     padding-block-end: .25rem;
 
 }
 
-.nav-links a:hover,
-.nav-links a:focus-visible,
-.nav-links a[aria-current="page"]{
-  color: var(--clr-primary);
-}
+
 
 
 .nav-links a::after{
@@ -148,19 +149,33 @@ img{
 /* Social Icons*/
 .social-icons{
     display:flex;
-    justify-content: center;
-    gap: var(--space-sm);
+    justify-content: space-evenly;
     list-style: none;
+    border:1px solid red;
     align-items: center;
 }
 
 .social-icons a{
-   color: var(--clr-text-muted);
+   color:#171717;
    transition: color .3s;
 }
 
 .social-icons a:hover{
     color: var(--clr-primary);
+}
+
+.nav-btn{
+     background-color: var(--clr-primary);
+    color: white;
+    padding:0.75rem 0.5rem;
+    border-radius:2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    box-shadow:0 20px 40px rgba(252, 138, 6, 0.2); 
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /*Hamburger Menu*/
@@ -169,7 +184,7 @@ img{
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: var(--clr-text-muted);
+    color:white;
     cursor: pointer;
 }
 
@@ -189,6 +204,10 @@ img{
         padding: var(--space-md);
         z-index: 100;
         border-radius: var(--radius);
+    }
+
+    .nav-links a{
+        color: var(--clr-text);
     }
 
     .nav-links.active{
@@ -254,7 +273,7 @@ img{
 .hero-btn{
     background-color: var(--clr-primary);
     color: white;
-    padding:0.75rem 2rem;
+    padding:0.75rem 1rem;
     border-radius:2rem;
     font-weight: 600;
     font-size: 1rem;
@@ -269,7 +288,7 @@ img{
 
 
 .hero-btn:hover{
-    background-color: #e0f7f5;
+    background-color: var(--clr-primary-hover);
 }
 
 .hero-image-wrapper{

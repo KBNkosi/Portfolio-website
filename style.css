@@ -372,7 +372,117 @@ img{
     }
 }
 
+/*******************
+ About Section
+ *******************/
+.about__tabs{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
 
+
+input[type=radio]{
+    display: none;
+}
+
+input[type=radio]:checked{
+     background: var(--clr-primary);
+    color: white;
+}
+
+.about__tabs label{
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  background:var(--clr-surface);
+  transition: background 0.3s ease;
+
+}
+
+input[type=radio]:checked + .about__tabs label[for="tab-education"]{
+     background: var(--clr-primary);
+    color: white;
+}
+
+input[type=radio]:checked + .about__tabs label[for="tab-certification"]{
+     background: var(--clr-primary);
+    color: white;
+}
+
+input[type=radio]:checked + .about__tabs label[for="tab-experience"] {
+    background: var(--clr-primary);
+    color: white;
+}
+
+.tab-content{
+    display: none;
+}
+
+#tab-education:checked ~ .about__content #content-education,
+#tab-certification:checked ~ .about__content #content-certification,
+#tab-experience:checked ~ .about__content #content-experience {
+    display: block;
+}
+
+/*******************
+ SKills Section
+ *******************/
+.skills{
+    padding: var(--space-lg) 0;
+    background: var(--clr-surface);
+}
+
+.skills h2{
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.skills-container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill{
+    margin-bottom: var(--space-md);
+}
+
+.skill-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name{
+    font-weight: 600;
+    color:var(--clr-text);
+}
+
+.skills-percentage{
+   color: var(--clr-text-muted);
+}
+
+.skill-bar{
+  height: 8px;
+  background: var(--clr-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.skill-progress{
+    height: 100%;
+    background: var(--clr-primary);
+    border-radius: var(--radius);
+    transition: width 1s ease-in-out;
+    animation: progressAnimation 1s ease-in-out;
+}
+
+@keyframes progressAnimation {
+    from{
+        width: 0;
+    }
+}
 
 /*******************
  Contact Page

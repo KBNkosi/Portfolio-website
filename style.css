@@ -401,16 +401,8 @@ input[type=radio]:checked{
 
 }
 
-input[type=radio]:checked + .about__tabs label[for="tab-education"]{
-     background: var(--clr-primary);
-    color: white;
-}
-
-input[type=radio]:checked + .about__tabs label[for="tab-certification"]{
-     background: var(--clr-primary);
-    color: white;
-}
-
+input[type=radio]:checked + .about__tabs label[for="tab-education"],
+input[type=radio]:checked + .about__tabs label[for="tab-certification"],
 input[type=radio]:checked + .about__tabs label[for="tab-experience"] {
     background: var(--clr-primary);
     color: white;
@@ -422,8 +414,70 @@ input[type=radio]:checked + .about__tabs label[for="tab-experience"] {
 
 #tab-education:checked ~ .about__content #content-education,
 #tab-certification:checked ~ .about__content #content-certification,
-#tab-experience:checked ~ .about__content #content-experience {
+#tab-experience:checked ~ .about__content #content-experience,
+#tab-experience:checked ~ .about__content #content-achievements {
     display: block;
+}
+
+/*Education Tab Styling*/
+#content-education{
+    display: grid;
+    gap: var(--space-md);
+}
+
+#content-education h3{
+    color: var(--clr-text);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#content-education h3::before{
+    content:  '🎓';
+    font-size: 1.4rem;
+}
+
+#content-education p{
+    color: var(--clr-text-muted);
+    margin: 0.25rem 0;
+    padding-left: 2rem;
+}
+
+#content-education strong{
+    color: var(--clr-text);
+    font-weight: 600;
+    min-width: 100px;
+    display: inline-block;
+}
+
+.education-item{
+    background: var(--clr-surface);
+    border-radius: var(--radius);
+    padding: var(--space-md);
+    border-left: 4px solid var(--clr-primary);
+    transition: transform 0.2s ease;
+}
+
+.education-item:hover{
+    transform: translateX(8px);
+}
+
+.education-item p{
+    position: relative;
+}
+
+.education-item p::before{
+    content: "";
+    position: absolute;
+    left: 0.75rem;
+    top:50%;
+    width:6px;
+    height: 6px;
+    background: var(--clr-primary);
+    border-radius: 50%;
+    transform: translateY(-50%);
 }
 
 /*******************
@@ -457,6 +511,29 @@ input[type=radio]:checked + .about__tabs label[for="tab-experience"] {
 .skill-name{
     font-weight: 600;
     color:var(--clr-text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-name i{
+    font-size: 1.25rem;
+}
+
+.fa-html5 {
+    color: #e34c26;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+}
+
+.fa-js {
+    color: #f7df1e;
+}
+
+.fa-react {
+    color: #61dafb;
 }
 
 .skills-percentage{
@@ -482,6 +559,48 @@ input[type=radio]:checked + .about__tabs label[for="tab-experience"] {
     from{
         width: 0;
     }
+}
+
+.achievement-item{
+     margin-bottom: var(--space-md);
+    padding: var(--space-md);
+    border-left: 4px solid var(--clr-primary);
+    background: var(--clr-surface);
+    border-radius: var(--radius);
+    transition: transform 0.2s ease;
+}
+
+.achievement-item:hover{
+    transform: translateX(8px);
+}
+
+.achievement-item h3{
+     color: var(--clr-text);
+    margin-bottom: 0.5rem;
+    font-family: var(--ff-heading);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.achievement-item i{
+    color: var(--clr-primary);
+}
+
+.achievement-item h3 i{
+    color: var(--clr-primary);
+}
+
+.achievement-meta{
+     color: var(--clr-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+}
+
+.achievement-item p{
+    color: var(--clr-text-muted);
+    line-height: 1.6;
 }
 
 /*******************

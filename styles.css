@@ -8,7 +8,7 @@
     --medium-grey: #272727;
     --light-grey: #f8f9fa; 
     --text-color: #333;
-    --background-color: #fff;
+    --background-color: #ffffff;
 }
 
 * {
@@ -40,16 +40,15 @@ h2.section-title {
     font-weight: 700;
 }
 
-/* --- NEW NAVIGATION BAR --- */
+/* --- NAVIGATION BAR --- */
 #nav-container {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.85);
+    background-color: #fff;
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07);
 }
 
 #navbar {
@@ -60,16 +59,25 @@ h2.section-title {
     border-radius: 50px;
     max-width: 950px;
     margin: 15px auto;
-    height: 70px;
+    height: 60px;
     padding: 0 2rem;
     box-shadow: 0 8px 32px rgba(23, 23, 23, 0.3);
 }
 
-nav .logo {
+.logo-container {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
     color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
 }
+
+#logo-img{
+    width: 40px;
+    height: auto;
+}
+
 
 .nav-links {
     display: flex;
@@ -114,7 +122,7 @@ button.nav-toggle {
     cursor: pointer;
 }
 
-/* --- NEW HERO SECTION --- */
+/* --- HERO SECTION --- */
 #hero {
     display: flex;
     justify-content: center;
@@ -174,14 +182,14 @@ button.nav-toggle {
     background-clip: text;
 }
 
-#socials-container {
+.socials-container {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
     gap: 1.5rem;
 }
 
-#socials-container i {
+.socials-container i {
     color: var(--medium-grey);
     font-size: 1.2rem; 
     padding: 0.8rem;
@@ -197,8 +205,38 @@ button.nav-toggle {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-#socials-container i:hover {
-    background: var(--primary-color);
+
+
+ #linkedin:hover {
+    background: #0A66C2;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(252, 138, 6, 0.3);
+}
+
+#github:hover {
+    background: #181717;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(252, 138, 6, 0.3);
+}
+
+#instagram:hover {
+    background: #E1306C;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(252, 138, 6, 0.3);
+}
+
+#twitter:hover {
+    background: #000000;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(252, 138, 6, 0.3);
+}
+
+#facebook:hover {
+    background: #1877F2;
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(252, 138, 6, 0.3);

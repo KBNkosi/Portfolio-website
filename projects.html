@@ -1,161 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        
-        <!--Logo-->
-        <a href="index.html" class="logo"> Kenny </a>
-
-        <!--Hamburger Menu-->
-        <button class="nav-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-
-        <!--Links-->
-
-        <ul class="nav-links">
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html" aria-current="page">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <!--Social Icons-->
-        <ul class="social-icons">
-          <li>
-            <a href="#"><i class="fa-brands fa-square-x-twitter fa-lg"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
-          </li>
-        </ul>
-      </nav>
+    <title>Kenny Nkosi | Portfolio</title>
+</head>
+<body>
+    <header id="nav-container">
+        <nav id="navbar">
+            <div class="logo">Kenny Nkosi</div>
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="projects">
-      <div class="container">
+    <main>
+    <section id="projects" class="projects">
+    <div class="container">
         <h2 class="section-title">Projects</h2>
         <div class="projects__grid">
-            <!--Project One-->
-          <div class="project-card">
-           
-              
-                <img src="./images/summer-app.jpg"  alt="" />
-              
-            
-            <div class="project-card__content">
-              <h3 class="project-card__title">Project One</h3>
-              <p class="project-card__description">A web application for managing user state</p>
-              <div class="project-card__stack">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Javascript</span>
-              </div>
-            
-              <div class="project-card__links">
-               <a href="#" class="btn-demo">Live demo</a>
-               <a href="#" class="btn-source">Github</a>
-
-              </div>
-              <details class="project-card__info">
-                <summary>More Details</summary>
-                <p><strong>Challenges Faced:</strong>responsive animations</p>
-                <p><strong>Learning Outcomes:</strong>Improved learning ability</p>
-
-              </details>
-             
+            <div class="project-card">
+                <div class="project-card__img-container">
+                    <img src="./images/career-recommendation.jpg" alt="Project One Thumbnail" />
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Project One: Career Recommendation System</h3>
+                    <p class="project-card__description">A career guidance web app that recommends personalized careers based on user personality</p>
+                    <div class="project-card__stack">
+                        <span class="tag">React</span>
+                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">Python (Flask)</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="#" class="btn btn-color-2">Live Demo</a>
+                        <a href="https://github.com/KBNkosi/CareerGuidance_App.git" class="btn btn-color-1">GitHub</a>
+                    </div>
+                </div>
             </div>
-          </div>
-             <!--Project Two-->
-          <div class="project-card">
-          
-          
-                <img src="./images/summer-app.jpg" alt="" class="project-card__img" />
-              
-          
-            <div class="project-card__content">
-              <h3 class="project-card__title">Project Two</h3>
-              <p class="project-card__description">A web application for managing user state</p>
-              <div class="project-card__stack">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Javascript</span>
-              </div>
-    
-              <div class="project-card__links">
-               <a href="#" class="btn-demo">Live demo</a>
-               <a href="#" class="btn-source">Github</a>
 
-              </div>
-              <details class="project-card__info">
-                <summary>More Details</summary>
-                <p><strong>Challenges Faced:</strong>responsive animations</p>
-                <p><strong>Learning Outcomes:</strong>Improved learning ability</p>
-
-              </details>
-             
+            <div class="project-card">
+                <div class="project-card__img-container">
+                    <img src="./images/trainspotter.jpg" alt="Project Two Thumbnail" />
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Project Two: TrainSpotter Application</h3>
+                    <p class="project-card__description">A social web application for users to post and comment on trains. </p>
+                    <div class="project-card__stack">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">Boostrap</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="#" class="btn btn-color-2">Live Demo</a>
+                        <a href="https://github.com/KBNkosi/CrowdRail-Project.git" class="btn btn-color-1">GitHub</a>
+                    </div>
+                </div>
             </div>
-          </div>
-             <!--Project Three-->
-          <div class="project-card">
-          
-        
-                <img src="./images/summer-app.jpg"  alt="" />
-            
-            
-            <div class="project-card__content">
-              <h3 class="project-card__title">Project Three</h3>
-              <p class="project-card__description">A web application for managing user state</p>
-              <div class="project-card__stack">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Javascript</span>
-              </div>
-              <div class="project-card__links">
-               <a href="#" class="btn-demo">Live demo</a>
-               <a href="#" class="btn-source">Github</a>
 
-              </div>
-              <details class="project-card__info">
-                <summary>More Details</summary>
-                <h4>Challenges Faced:</h4><br>
-                <p>responsive animations</p>
-                <h4>Learning Outcomes:</h4>
-                <p>Improved learning ability</p>
-
-              </details>
-             
+            <div class="project-card">
+                <div class="project-card__img-container">
+                    <img src="./images/library-management.jpg" alt="Project Three Thumbnail" />
+                </div>
+                <div class="project-card__content">
+                    <h3 class="project-card__title">Project Three: Library Management</h3>
+                    <p class="project-card__description"> Library management system that helps manage books, users, and library operations efficiently.</p>
+                    <div class="project-card__stack">
+                        <span class="tag">C#</span>
+                        <span class="tag">.Net 7.0</span>
+                    </div>
+                    <div class="project-card__links">
+                        <a href="#" class="btn btn-color-2">Live Demo</a>
+                        <a href="https://github.com/KBNkosi/Library-Management-System.git" class="btn btn-color-1">GitHub</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <script>
-      const navToggle = document.querySelector(".nav-toggle");
-      const navLinks = document.querySelector(".nav-links");
+    </div>
+</section>
+    </main>
 
-      navToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
-  </body>
+    <footer>
+            <p>Copyright &#169; 2025 Kenny Nkosi. All Rights Reserved.</p>
+        
+    </footer>
+
+    <script src="app.js"></script>
+</body>
 </html>

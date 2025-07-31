@@ -1,273 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="container nav-container">
-        <nav class="navbar">
-          <!--Logo-->
-          <a href="index.html" class="logo"> Kenny </a>
-
-          <!--Hamburger Menu-->
-          <button class="nav-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-
-          <!--Links-->
-
-          <ul class="nav-links">
-            <li><a href="index.html" aria-current="page">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-
-          <!--Download CV-->
-          <div class="nav-btn">
-            <a href="about.html">Resume</a>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <div class="hero-text">
-            <h1>Kenny Nkosi</h1>
-            <h2>IT Graduate and Web developer</h2>
-            <p>
-              Motivated and goal-driven Information Technology graduate from
-              Richfield Graduate Institute of Technology with a passion for
-              solving real-world problems through software.
-            </p>
-            <!--Social Icons-->
-            <ul class="social-icons">
-              <li>
-                <a href="#"
-                  ><i class="fa-brands fa-square-x-twitter fa-lg"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa-brands fa-square-facebook fa-lg"></i
-                ></a>
-              </li>
+    <title>Kenny Nkosi | Portfolio</title>
+</head>
+<body>
+    <header id="nav-container">
+        <nav id="navbar">
+            <div class="logo">Kenny Nkosi</div>
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="hero-btn">
-              <a href="about.html">Contact me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Kenny Nkosi</h1>
+                <p class="section__text__p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='contact.html'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <a href="#" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/KBNkosi" target="_blank" aria-label="GitHub Profile">
+                        <i class="fa-brands fa-square-github fa-lg"></i>
+                    </a>
+                </div>
             </div>
-          </div>
-
-          <div class="hero-image-wrapper">
-            <div class="hero-image-bg"></div>
-            <img
-              src="./images/graduate-photo.png"
-              alt="Kenny Nkosi"
-              class="hero-image"
-            />
-          </div>
-        </div>
-      </section>
-      <!--About Section-->
-      <section class="about" name="about">
-        <h1>About Me</h1>
-        <div class="container">
-          <input type="radio" id="tab-education" name="about-tabs" checked />
-          <input type="radio" id="tab-certification" name="about-tabs" />
-          <input type="radio" id="tab-experience" name="about-tabs" />
-          <input type="radio" id="tab-achievements" name="about-tabs" />
-
-          <div class="about__tabs">
-            <label for="tab-education">Education</label>
-
-            <label for="tab-certification">Certification</label>
-
-            <label for="tab-experience">Experience</label>
-
-            <label for="tab-achievements">Achievements</label>
-          </div>
-
-          <div class="about__content">
-            <div id="content-education" class="tab-content">
-              <div class="education-item">
-           <h3>Bsc in Information Technology</h3>
-              <p>
-                <strong>Institute:</strong> Richfield Graduate Institute of
-                Technology
-              </p>
-              <p><strong>Duration:</strong> 2022 - 2024</p>
-              <p><strong>Overall Result:</strong> 74%</p>
-              </div>
-              <div class="education-item">
-<h3>Diploma in Logistics</h3>
-              <p><strong>Institute:</strong>Tshwane University of Technology</p>
-              <p><strong>Duration:</strong> 2017 - 2019</p>
-              <p><strong>Overall Result:</strong> 72%</p>
-              </div>
-              <div class="education-item">
-  <h3>Secondary School Certificate</h3>
-              <p><strong>Institute:</strong> Hoerskool Lydenburg</p>
-              <p><strong>Duration:</strong>2012 - 2016</p>
-              <p><strong>Overall Result:</strong> 63%</p>
-              </div>
-             
-
-              
-
-            
+            <div class="hero__img-container">
+                <div class="hero__img-bg"></div>
+                <img src="./images/graduate-photo.png" class="hero__img" alt="Kenny Nkosi profile picture" />
             </div>
+        </section>
 
-            <div id="content-certification" class="tab-content">
-              <p>Certification details go here...</p>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn" onclick="showTab(event, 'summary')">Summary</button>
+                        <button class="tab-btn" onclick="showTab(event, 'experience')">Experience</button>
+                        <button class="tab-btn" onclick="showTab(event, 'education')">Education</button>
+                        <button class="tab-btn active" onclick="showTab(event, 'achievements')">Achievements</button>
+                    </div>
+                    
+                    <div class="tab-content" id="summary">
+                        <h3>Professional Summary</h3>
+                        <p>I am a motivated and goal-driven Information Technology graduate from Richfield Graduate Institute of Technology with a passion for solving real-world problems through software. I have proficiency in modern web development technologies, with hands-on experience from academic projects, self-led learning, and a startup internship.</p>
+                        <p>I possess skills in both development and support roles, with a proven ability to collaborate, learn quickly, and contribute meaningfully to team projects.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="experience">
+                        <h3>Work Experience</h3>
+                        <div class="achievement-item">
+                            <h3><i class="fas fa-briefcase"></i> Frontend Intern – Pomegranate Startup</h3>
+                            <p class="achievement-meta">Remote | May 2025 – July 2025 (Present)</p>
+                            <p>Building a B2B marketplace MVP using FlutterFlow and Supabase, focused on speed to market. Assisting in rapid prototyping, debugging, and improving user experience based on feedback.</p>
+                        </div>
+                        
+                        <div class="achievement-item">
+                            <h3><i class="fas fa-users"></i> Student Support Mentor – ALX Africa</h3>
+                            <p class="achievement-meta">Volunteer | May 2024 – June 2024</p>
+                            <p>Mentored a group of students by helping them navigate technical challenges in coursework and projects. Achieved a 100% task completion rate among mentees through consistent guidance, encouragement, and practical support.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="education">
+                        <h3>Educational Background</h3>
+                        <div class="education-item">
+                            <h3>BSc in Information Technology</h3>
+                            <p><strong>Institute:</strong> Richfield Graduate Institute of Technology</p>
+                            <p><strong>Duration:</strong> 2022 - 2024</p>
+                            <p><strong>Result:</strong> 74%</p>
+                        </div>
+                        
+                        <div class="education-item">
+                            <h3>Diploma in Logistics</h3>
+                            <p><strong>Institute:</strong> Tshwane University of Technology</p>
+                            <p><strong>Duration:</strong> 2017 - 2019</p>
+                            <p><strong>Result:</strong> 72%</p>
+                        </div>
+                        
+                        <div class="education-item">
+                            <h3>Secondary School Certificate</h3>
+                            <p><strong>Institute:</strong> Hoerskool Lydenburg</p>
+                            <p><strong>Duration:</strong> 2012 - 2016</p>
+                            <p><strong>Result:</strong> 63%</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content active" id="achievements">
+                        <h3>Key Achievements</h3>
+                        <div class="achievement-item">
+                            <h3><i class="fas fa-trophy"></i> B2B Marketplace Prototype Delivery</h3>
+                            <p class="achievement-meta">Startup Internship, 2025</p>
+                            <p>Successfully delivered a fully functional B2B marketplace prototype for an early-stage startup, enabling merchants to list products and manage their stores.</p>
+                        </div>
+                        
+                        <div class="achievement-item">
+                            <h3><i class="fas fa-chalkboard-user"></i> Mentorship &amp; Technical Support</h3>
+                            <p class="achievement-meta">ALX Program, 2025</p>
+                            <p>Achieved a 100% success rate among mentees, helping them meet key milestones and complete critical projects.</p>
+                        </div>
+                        
+                        <div class="achievement-item">
+                            <h3><i class="fas fa-graduation-cap"></i> Capstone Project – Career Guidance System</h3>
+                            <p class="achievement-meta">Richfield, 2024</p>
+                            <p>Co-led a team final-year capstone project that leveraged machine learning to recommend personalized career paths to users.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="content-experience" class="tab-content">
-              <p>Experience details go here...</p>
+        </section>
+
+        <section id="skills" class="container">
+            <h2 class="section-title">My Tech Stack</h2>
+            <p class="skill-text">Technologies that I have worked with.</p>
+            <div class="skills-grid">
+                <div class="skill-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+                <div class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill-item"><i class="fa-brands fa-react"></i> React</div>
+                <div class="skill-item">FlutterFlow</div>
+                <div class="skill-item">Supabase</div>
             </div>
-
-            <div id="content-achievements" class="tab-content">
-              <div class="achievement-item">
-                <h3>
-                  <i class="fa-solid fa-trophy"></i> B2B Marketplace Prototype
-                  Delivery
-                </h3>
-                <p class="achievement-meta">Startup Internship, 2025</p>
-                <p>
-                  Successfully delivered a fully functional B2B marketplace
-                  prototype for an early-stage startup, enabling merchants to
-                  list products and manage their stores. Contributed to frontend
-                  development, ensured usability, and collaborated closely with
-                  the founder to achieve fast time-to-market.
-                </p>
-              </div>
-              <div class="achievement-item">
-                <h3>
-                  <i class="fa-solid fa-chalkboard-user"></i> Mentorship &
-                  Technical Support
-                </h3>
-                <p class="achievement-meta">ALX Program, 2025</p>
-                <p>
-                  Actively mentored and guided fellow learners through technical
-                  challenges in the ALX Software Engineering Program. Achieved a
-                  100% success rate among mentees, helping them meet key
-                  milestones and complete critical projects.
-                </p>
-              </div>
-              <div class="achievement-item">
-                <h3>
-                  <i class="fa-solid fa-graduation-cap"></i> Capstone Project –
-                  Career Guidance System
-                </h3>
-                <p class="achievement-meta">Richfield, 2024</p>
-                <p>
-                  Co-led and presented a team final-year capstone project that
-                  leveraged machine learning to recommend personalized career
-                  paths to users. Delivered a polished MVP and earned praise for
-                  both innovation and technical implementation.
-                </p>
-              </div>
-
-              <div class="achievement-item">
-                <h3>
-                  <i class="fa-solid fa-users"></i> Student Representative
-                </h3>
-                <p class="achievement-meta">Secondary School, 2015</p>
-                <p>
-                  Elected by peers to serve as Student Representative based on
-                  leadership, discipline, and compassion. Advocated for student
-                  needs and helped maintain a respectful school environment.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--SKill Section-->
-      <section class="skills">
-        <div class="container">
-          <h2>My Skills</h2>
-          <div class="skills-container">
-            <div class="skill">
-              <div class="skill-header">
-                <span class="skill-name">
-                  <i class="fa-brands fa-html5"></i>
-                  HTML
-                </span>
-
-                <span class="skill-percentage">90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 90%"></div>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill-header">
-                <span class="skill-name">
-                  <i class="fa-brands fa-css3-alt"></i>
-                  CSS
-                </span>
-                <span class="skill-percentage">85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%"></div>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill-header">
-                <span class="skill-name">
-                  <i class="fa-brands fa-js"></i>
-                  JavaScript
-                </span>
-                <span class="skill-percentage">75%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 75%"></div>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill-header">
-                <span class="skill-name">
-                  <i class="fa-brands fa-react"></i>
-                  React
-                </span>
-
-                <span class="skill-percentage">70%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 70%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
-    <script>
-      const navToggle = document.querySelector(".nav-toggle");
-      const navLinks = document.querySelector(".nav-links");
+    <footer>
+        
+            <p>Copyright &#169; 2025 Kenny Nkosi. All Rights Reserved.</p>
+        
+    </footer>
 
-      navToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
-  </body>
+    <script src="app.js"></script>
+</body>
 </html>

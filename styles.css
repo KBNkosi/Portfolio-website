@@ -64,7 +64,7 @@ h2.section-title {
     box-shadow: 0 8px 32px rgba(23, 23, 23, 0.3);
 }
 
-.logo-container {
+.logo {
     display: flex;
     gap: 1.2rem;
     align-items: center;
@@ -74,9 +74,12 @@ h2.section-title {
 }
 
 #logo-img{
+    color: white;
     width: 40px;
-    height: auto;
+    height: 40px;
 }
+
+
 
 
 .nav-links {
@@ -128,8 +131,7 @@ button.nav-toggle {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    min-height: 100vh; 
-    padding-top: 100px; 
+    padding: 100px; 
     background: linear-gradient(135deg, #fff 0%, var(--light-grey) 100%);
 }
 
@@ -228,12 +230,6 @@ button.nav-toggle {
     box-shadow: 0 6px 20px rgba(252, 138, 6, 0.3);
 }
 
-#twitter:hover {
-    background: #000000;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(252, 138, 6, 0.3);
-}
 
 #facebook:hover {
     background: #1877F2;
@@ -561,6 +557,22 @@ footer {
     font-size: 0.9rem;
 }
 
+.hidden{
+    display: none;
+}
+
+.project-details{
+    margin-top: 10px;
+}
+
+.project-details button{
+    background-color: transparent;
+    border: none;
+    color: #4f46e5;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* Media Queries for Projects Section */
 @media (max-width: 768px) {
     .projects__grid {
@@ -573,7 +585,7 @@ footer {
     }
 }
 
-/* --- CONTACT SECTION --- */
+/* --- CONTACT Page --- */
 
 
 #contact {

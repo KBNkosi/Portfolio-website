@@ -46,6 +46,14 @@
                         <a href="#" class="btn btn-color-2">Live Demo</a>
                         <a href="https://github.com/KBNkosi/CareerGuidance_App.git" class="btn btn-color-1">GitHub</a>
                     </div>
+                    <div class="project-card__details">
+                       <button onclick="toggleDetails(this)">More Info</button>
+                       <div class="details hidden">
+                          <p><strong>Contribution:</strong>Contributed to research, developed personality test feature, and conducted testing </p>
+                          <p><strong>Key Learnings:</strong>Research, Logic, Teamwork</p>
+                          <p><strong>Comfort Level:</strong> React ⭐⭐⭐⭐☆ | Tailwind CSS ⭐⭐⭐⭐☆ | Flask ⭐⭐⭐☆☆</p>
+                       </div>
+                    </div>
                 </div>
             </div>
 
@@ -95,6 +103,12 @@
         
     </footer>
 
-    <script src="app.js"></script>
+    <script>
+      function toggleDetails(button){
+        const details=button.nextElementSibling;
+        details.classList.toggle("hidden");
+        button.textContent=details.classList.contains("hidden") ? "More Info" : "Less Info";
+      }
+    </script>
 </body>
 </html>

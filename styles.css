@@ -73,14 +73,6 @@ h2.section-title {
     font-weight: 600;
 }
 
-#logo-img{
-    color: white;
-    width: 40px;
-    height: 40px;
-}
-
-
-
 
 .nav-links {
     display: flex;
@@ -389,13 +381,7 @@ button.nav-toggle {
 }
 .skill-item i { font-size: 1.5rem; }
 
-/* --- FOOTER --- */
-footer {
-    background: var(--dark-grey);
-    color: #ccc;
-    padding: 1rem 2rem;
-    text-align: center;
-}
+
 
 /* --- MEDIA QUERIES For Home Page--- */
 @media (max-width: 960px) {
@@ -544,9 +530,16 @@ footer {
     background: var(--primary-color); 
 }
 
+.project-card__skills ul{
+    padding-left: 1.2rem;
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
 .project-card__links {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 1rem;
     margin-top: auto; 
 }
@@ -762,4 +755,12 @@ footer {
     .contact-form textarea {
         padding: 0.9rem;
     }
+}
+
+/* --- FOOTER --- */
+footer {
+    background: var(--dark-grey);
+    color: #ccc;
+    padding: 1rem 2rem;
+    text-align: center;
 }

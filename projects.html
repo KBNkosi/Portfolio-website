@@ -1,114 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <title>Kenny Nkosi | Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="nav-container">
-        <nav id="navbar">
-            <div class="logo">Kenny Nkosi</div>
-            <button class="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav id="navbar">
+        <div class="logo">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="24" cy="24" r="24" fill="#FC8A06" />
+            <text
+              x="50%"
+              y="56%"
+              text-anchor="middle"
+              fill="#fff"
+              font-family="Montserrat, Arial, sans-serif"
+              font-size="22"
+              font-weight="bold"
+              dy=".3em"
+            >
+              KN
+            </text>
+          </svg>
+          Kenny Nkosi
+        </div>
+
+        <button class="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-    <section id="projects" class="projects">
-    <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects__grid">
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects__grid">
             <div class="project-card">
-                <div class="project-card__img-container">
-                    <img src="./images/career-recommendation.jpg" alt="Project One Thumbnail" />
+              <div class="project-card__img-container">
+                <img
+                  src="./images/products.png"
+                  alt="Project One Thumbnail"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  Project One: Ecommerce Product UI
+                </h3>
+                <p class="project-card__description">
+                  A responsive product listing page app. It fetches products
+                  from a public API and displays them in reusable cards with
+                  expandable descriptions.
+                </p>
+                <div class="project-card__stack">
+                  <span class="tag">React</span>
+                  <span class="tag">Tailwind CSS</span>
+                  <span class="tag">Fetch API</span>
+                  <span class="tag">JavaScript</span>
                 </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Project One: Career Recommendation System</h3>
-                    <p class="project-card__description">A career guidance web app that recommends personalized careers based on user personality</p>
-                    <div class="project-card__stack">
-                        <span class="tag">React</span>
-                        <span class="tag">Tailwind CSS</span>
-                        <span class="tag">Python (Flask)</span>
-                    </div>
-                    <div class="project-card__links">
-                        <a href="#" class="btn btn-color-2">Live Demo</a>
-                        <a href="https://github.com/KBNkosi/CareerGuidance_App.git" class="btn btn-color-1">GitHub</a>
-                    </div>
-                    <div class="project-card__details">
-                       <button onclick="toggleDetails(this)">More Info</button>
-                       <div class="details hidden">
-                          <p><strong>Contribution:</strong>Contributed to research, developed personality test feature, and conducted testing </p>
-                          <p><strong>Key Learnings:</strong>Research, Logic, Teamwork</p>
-                          <p><strong>Comfort Level:</strong> React ⭐⭐⭐⭐☆ | Tailwind CSS ⭐⭐⭐⭐☆ | Flask ⭐⭐⭐☆☆</p>
-                       </div>
-                    </div>
+                <div class="project-card__skills">
+                  <strong>What I learned:</strong>
+                  <ul>
+                    <li>How to fetch and display data from a public API</li>
+                    <li>Creating reusable and dynamic components in React</li>
+                    <li>Practicing responsive design with Tailwind CSS</li>
+                  </ul>
                 </div>
+                <div class="project-card__links">
+                  <a href="#" class="btn btn-color-2">Live Demo</a>
+                  <a
+                    href="https://github.com/KBNkosi/mini-marketplace-app.git"
+                    class="btn btn-color-1"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
             </div>
 
             <div class="project-card">
-                <div class="project-card__img-container">
-                    <img src="./images/trainspotter.jpg" alt="Project Two Thumbnail" />
+              <div class="project-card__img-container">
+                <img
+                  src="./images/translate-app.png"
+                  alt="Project Two Thumbnail"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  Project Two: Translator Application
+                </h3>
+                <p class="project-card__description">
+                  A React-based translation interface that lets users input
+                  text, select source and target languages, and receive
+                  translations using a public API.
+                </p>
+                <div class="project-card__stack">
+                  <span class="tag">React</span>
+                  <span class="tag">Tailwind CSS</span>
+                  <span class="tag">MyMemory API</span>
                 </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Project Two: TrainSpotter Application</h3>
-                    <p class="project-card__description">A social web application for users to post and comment on trains. </p>
-                    <div class="project-card__stack">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">Boostrap</span>
-                        <span class="tag">PHP</span>
-                    </div>
-                    <div class="project-card__links">
-                        <a href="#" class="btn btn-color-2">Live Demo</a>
-                        <a href="https://github.com/KBNkosi/CrowdRail-Project.git" class="btn btn-color-1">GitHub</a>
-                    </div>
+                <div class="project-card__skills">
+                  <strong>What I Learned:</strong>
+                  <ul>
+                    <li> Integrating external translation APIs</li>
+                    <li> Managing state and form inputs in React</li>
+                    <li> Handling loading and error states gracefully</li>
+                  </ul>
                 </div>
+                <div class="project-card__links">
+                  <a
+                    href="https://kbnkosi.github.io/Translator-App/"
+                    class="btn btn-color-2"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/KBNkosi/CrowdRail-Project.git"
+                    class="btn btn-color-1"
+                    >GitHub</a
+                  >
+                </div>
+                
+              </div>
             </div>
 
             <div class="project-card">
-                <div class="project-card__img-container">
-                    <img src="./images/library-management.jpg" alt="Project Three Thumbnail" />
+              <div class="project-card__img-container">
+                <img
+                  src="./images/coffee-page.png"
+                  alt="Project Three Thumbnail"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  Project Three: Coffee List Page
+                </h3>
+                <p class="project-card__description">
+                  A React frontend that fetches coffee items from a public API
+                  and displays them with clean cards, images, and pricing.
+                </p>
+                <div class="project-card__stack">
+                  <span class="tag">React</span>
+                  <span class="tag">Tailwind CSS</span>
+                  
+                  <span class="tag">Fetch API</span>
                 </div>
-                <div class="project-card__content">
-                    <h3 class="project-card__title">Project Three: Library Management</h3>
-                    <p class="project-card__description"> Library management system that helps manage books, users, and library operations efficiently.</p>
-                    <div class="project-card__stack">
-                        <span class="tag">C#</span>
-                        <span class="tag">.Net 7.0</span>
-                    </div>
-                    <div class="project-card__links">
-                        <a href="#" class="btn btn-color-2">Live Demo</a>
-                        <a href="https://github.com/KBNkosi/Library-Management-System.git" class="btn btn-color-1">GitHub</a>
-                    </div>
+                <div class="project-card__skills">
+                  <strong>What I Learned:</strong>
+                  <ul>
+                    <li>
+                       How to fetch and render external API data into reusable
+                      components
+                    </li>
+                    <li> Handling loading and error states properly</li>
+                    <li> Designing responsive layouts with Tailwind CSS</li>
+                  </ul>
                 </div>
+                <div class="project-card__links">
+                  <a
+                    href="https://kbnkosi.github.io/Coffee-list-Project/"
+                    class="btn btn-color-2"
+                    >Live Demo</a
+                  >
+                  <a
+                    href="https://github.com/KBNkosi/Coffee-list-Project.git"
+                    class="btn btn-color-1"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
     </main>
 
     <footer>
-            <p>Copyright &#169; 2025 Kenny Nkosi. All Rights Reserved.</p>
-        
+      <p>Copyright &#169; 2025 Kenny Nkosi. All Rights Reserved.</p>
     </footer>
 
     <script>
-      function toggleDetails(button){
-        const details=button.nextElementSibling;
+      function toggleDetails(button) {
+        const details = button.nextElementSibling;
         details.classList.toggle("hidden");
-        button.textContent=details.classList.contains("hidden") ? "More Info" : "Less Info";
+        button.textContent = details.classList.contains("hidden")
+          ? "More Info"
+          : "Less Info";
       }
     </script>
-</body>
+  </body>
 </html>

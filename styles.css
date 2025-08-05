@@ -356,6 +356,70 @@ button.nav-toggle {
     margin-bottom: 0.5rem;
 }
 
+/* --- SERVICES SECTION --- */
+#services{
+    padding: 5rem 2rem;
+    
+}
+
+#services .section-title{
+    background: linear-gradient(135deg, var(--medium-grey), var(--primary-color));
+    background-clip: text;
+}
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-card{
+    background: var(--background-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.07);
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.service-card:hover{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(252, 138, 6, 0.13);
+}
+
+.service-icon{
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(252,138,6,0.15);
+}
+
+.service-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-desc{
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+
 
 /* --- SKILLS SECTION --- */
 #skills {
@@ -435,6 +499,16 @@ button.nav-toggle {
     .tab-btn {
         flex: 1 1 auto; 
         text-align: center;
+    }
+
+    /*Service section*/
+    .services-grid{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .service-card{
+        padding: 2rem 1.2rem 1.5rem 1.2rem;
     }
 }
 
@@ -644,7 +718,6 @@ button.nav-toggle {
 }
 
 .contact-details i {
-    color: var(--primary-color); 
     font-size: 1.3rem;
     margin-right: 1rem;
     min-width: 25px;
@@ -684,6 +757,36 @@ button.nav-toggle {
     color: var(--text-color);
     outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form select {
+    width: 100%;
+    padding: 1.1rem;
+    border: 1px solid var(--medium-grey);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background: var(--light-grey);
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg width='16' height='16' fill='gray' xmlns='http://www.w3.org/2000/svg'><path d='M4 6l4 4 4-4'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1.2rem center;
+    background-size: 1.2em;
+}
+
+.contact-form select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(252, 138, 6, 0.25);
+}
+
+.contact-form option {
+    color: var(--text-color);
+    background: var(--background-color);
 }
 
 .contact-form input:focus,

@@ -59,7 +59,7 @@ Portfolio/
    - Coffee List Page
 
 5. **Skills**: Tech stack display with icons
-6. **Contact**: Functional contact form with direct email integration
+6. **Contact**: Functional contact form that integrates with Google Sheets via Google Apps Script, allowing real-time storage of form submissions.
 
 ## 🚀 Getting Started
 

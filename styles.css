@@ -123,7 +123,7 @@ button.nav-toggle {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    padding: 100px; 
+    padding: 150px 2rem; 
     background: linear-gradient(135deg, #fff 0%, var(--light-grey) 100%);
 }
 
@@ -333,6 +333,10 @@ button.nav-toggle {
 .tab-content h3 {
     color: var(--primary-color); 
     margin-bottom: 1rem;
+}
+
+.tab-content#summary p{
+    margin: 12px;
 }
 
 .education-item, .achievement-item {

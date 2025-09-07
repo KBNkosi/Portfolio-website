@@ -10,11 +10,11 @@ navToggle.addEventListener("click", () => {
 /* --- TABS LOGIC --- */
 function showTab(evt, tabName) {
     
-    const tabContents = document.querySelectorAll(".tab-content");
+    const tabContents = document.querySelectorAll(".tabContent");
     tabContents.forEach(tab => tab.classList.remove("active"));
 
    
-    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabButtons = document.querySelectorAll(".tabBtn");
     tabButtons.forEach(btn => btn.classList.remove("active"));
 
     
@@ -25,13 +25,13 @@ function showTab(evt, tabName) {
 // Ensure the default tab is shown when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
     
-    const activeTabContent = document.querySelector('.tab-content.active');
-    const activeTabButton = document.querySelector('.tab-btn.active');
+    const activeTabContent = document.querySelector('.tabContent.active');
+    const activeTabButton = document.querySelector('.tabBtn.active');
 
     if (!activeTabContent || !activeTabButton) {
         
         const defaultTabContent = document.getElementById('achievements'); 
-        const defaultTabButton = document.querySelector('.tab-buttons .tab-btn:last-child'); 
+        const defaultTabButton = document.querySelector('.tabButtons .tabBtn:last-child'); 
 
         if (defaultTabContent && defaultTabButton) {
             defaultTabContent.classList.add('active');

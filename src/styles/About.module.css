@@ -1,0 +1,165 @@
+ /* About Me Section */
+        .about {
+            padding: var(--space-xl) var(--space-lg);
+            background: var(--clr-surface);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .sectionTitle {
+            text-align: center;
+            font-size: var(--fs-3xl);
+            font-weight: 700;
+            color: var(--clr-text);
+            margin-bottom: var(--space-xl);
+            position: relative;
+        }
+
+        .sectionTitle::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--clr-primary);
+            border-radius: 2px;
+        }
+
+        .tabsContainer {
+            background: var(--clr-background);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .tabButtons {
+            display: flex;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+            border-bottom: 2px solid var(--clr-border);
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .tabButtons::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tabBtn {
+            background: transparent;
+            border: none;
+            padding: var(--space-md) var(--space-lg);
+            font-size: var(--fs-base);
+            font-weight: 600;
+            color: var(--clr-text-muted);
+            cursor: pointer;
+            border-radius: var(--radius) var(--radius) 0 0;
+            transition: var(--transition);
+            white-space: nowrap;
+            position: relative;
+            min-width: 120px;
+        }
+
+        .tabBtn:hover {
+            color: var(--clr-primary);
+            background: rgba(255, 96, 2, 0.05);
+        }
+
+        .tabBtn.active {
+            color: var(--clr-primary);
+            background: var(--clr-surface);
+            border-bottom: 3px solid var(--clr-primary);
+            transform: translateY(2px);
+        }
+
+        .tabContent {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: absolute;
+            width: 100%;
+            left: 0;
+        }
+
+        .tabContent.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            position: relative;
+        }
+
+        .tabContent h3 {
+            font-size: var(--fs-xl);
+            font-weight: 700;
+            color: var(--clr-text);
+            margin-bottom: var(--space-lg);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .tabContent p {
+            font-size: var(--fs-base);
+            line-height: 1.7;
+            color: var(--clr-text-muted);
+            margin-bottom: var(--space-md);
+        }
+
+        .achievementItem,
+        .educationItem {
+            background: var(--clr-surface);
+            padding: var(--space-lg);
+            border-radius: var(--radius);
+            margin-bottom: var(--space-lg);
+            border-left: 4px solid var(--clr-primary);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .achievementItem:hover,
+        .educationItem:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .achievementItem h4,
+        .educationItem h4 {
+            font-size: var(--fs-lg);
+            font-weight: 600;
+            color: var(--clr-text);
+            margin-bottom: var(--space-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .achievementItem h4 i,
+        .educationItem h4 i {
+            color: var(--clr-primary);
+            font-size: var(--fs-lg);
+        }
+
+        .achievementMeta {
+            font-size: var(--fs-sm);
+            color: var(--clr-primary);
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+
+        .achievementItem p:last-child,
+        .educationItem p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Tab content container for proper positioning */
+        .tabsContainer {
+            position: relative;
+            min-height: 400px;
+        }

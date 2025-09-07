@@ -1,0 +1,98 @@
+/* Header Styles */
+        .navContainer {
+            background: var(--clr-surface);
+            box-shadow: var(--shadow-sm);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: var(--header-height);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-weight: 600;
+            font-size: var(--fs-lg);
+            color: var(--clr-text);
+        }
+
+        .navLinks {
+            display: flex;
+            list-style: none;
+            gap: var(--space-xl);
+            margin: 0 var(--space-xl);
+        }
+
+        .navLinks a {
+            text-decoration: none;
+            color: var(--clr-text);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .navLinks a:hover {
+            color: var(--clr-primary);
+        }
+
+        .navLinks a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--clr-primary);
+            border-radius: 2px;
+        }
+
+        .navBtn {
+            background: var(--clr-dark-grey);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 500;
+            font-size: var(--fs-sm);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .navBtn:hover {
+            background: #2a2c29;
+            transform: translateY(-1px);
+        }
+
+        .navToggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: var(--fs-lg);
+            cursor: pointer;
+        }
+
+         
+
+        /*Responsive design*/
+         @media (max-width: 768px) {
+            .navLinks {
+                display: none;
+            }
+
+            .navToggle {
+                display: block;
+            }
+        }

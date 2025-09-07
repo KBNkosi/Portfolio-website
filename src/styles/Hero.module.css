@@ -1,0 +1,258 @@
+/* Hero Section */
+        .hero {
+            padding: calc(var(--header-height) + var(--space-xl)) var(--space-lg) var(--space-xl);
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .heroContainer {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+
+        .heroDescription {
+            max-width: 500px;
+        }
+
+        .heroSmallText {
+            display: inline-block;
+            background: var(--clr-primary);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: var(--fs-sm);
+            font-weight: 500;
+            margin-bottom: var(--space-md);
+        }
+
+        .title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: var(--space-lg);
+            color: var(--clr-text);
+        }
+
+        .title span {
+            color: var(--clr-primary);
+            display: block;
+            font-size: 2.8rem;
+            margin-top: 8px;
+        }
+
+        .heroText {
+            font-size: var(--fs-md);
+            color: var(--clr-text-muted);
+            margin-bottom: var(--space-xl);
+            line-height: 1.7;
+        }
+
+        .btnContainer {
+            display: flex;
+            gap: var(--space-md);
+            margin-bottom: var(--space-xl);
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--fs-base);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btnColor2 {
+            background: var(--clr-primary);
+            color: white;
+        }
+
+        .btnColor2:hover {
+            background: var(--clr-primary-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btnColor1 {
+            background: transparent;
+            color: var(--clr-text);
+            border: 2px solid var(--clr-border);
+        }
+
+        .btnColor1:hover {
+            background: var(--clr-text);
+            color: white;
+            border-color: var(--clr-text);
+        }
+
+        /* Hero Image Section */
+        .heroImgContainer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heroImgBg {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, var(--clr-primary) 0%, #ffb347 100%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .heroImg {
+            width: 280px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+            position: relative;
+            z-index: 2;
+            margin-left: 20px;
+        }
+
+        .badgeContainer {
+            position: absolute;
+            z-index: 3;
+        }
+
+        .badge {
+            position: absolute;
+            background: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: var(--fs-sm);
+            font-weight: 600;
+            box-shadow: var(--shadow-md);
+            white-space: nowrap;
+        }
+
+        .badge1 {
+            top: 80px;
+            left: -80px;
+            background: var(--clr-dark-grey);
+            color: white;
+        }
+
+        .badge2 {
+            bottom: 100px;
+            right: -60px;
+            color: var(--clr-primary);
+        }
+
+        /* Skills Section */
+        .skills {
+            max-width: 100%;
+            margin: var(--space-xl) auto 0;
+            padding: 0;
+            overflow: hidden;
+            border-top: 1px solid var(--clr-border);
+        }
+
+        .skillsGrid {
+            display: flex;
+            gap: var(--space-lg);
+            padding: var(--space-lg) 0;
+            animation: slideLeft 15s linear infinite;
+            width: max-content;
+        }
+
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .skillsGrid:hover {
+            animation-play-state: paused;
+        }
+
+        .skillItem {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: var(--space-sm) var(--space-md);
+            background: var(--clr-surface);
+            border-radius: var(--radius);
+            font-weight: 500;
+            color: var(--clr-text);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .skillItem:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .skillItem i {
+            color: var(--clr-primary);
+            font-size: var(--fs-lg);
+        }
+
+         /* Responsive Design */
+        @media (max-width: 768px) {
+           
+
+            .heroContainer {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+                text-align: center;
+            }
+
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .title span {
+                font-size: 2rem;
+            }
+
+            .btnContainer {
+                justify-content: center;
+            }
+
+            .heroImgBg {
+                width: 250px;
+                height: 250px;
+            }
+
+            .heroImg {
+                width: 230px;
+                height: 280px;
+            }
+
+            .badge1 {
+                left: -60px;
+                top: 60px;
+            }
+
+            .badge2 {
+                right: -40px;
+                bottom: 80px;
+            }
+
+            .skillsGrid {
+                gap: var(--space-sm);
+                animation-duration: 20s;
+            }
+
+            .skillItem {
+                min-width: 120px;
+            }
+        }

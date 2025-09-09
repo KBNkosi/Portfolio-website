@@ -17,7 +17,7 @@ const projects=[
      description:`A React-based translation interface that lets users input
                   text, select source and target languages, and receive
                   translations using a public API.`,
-     technologies:["React", "Tailwind CSS", ">MyMemory API"],
+     technologies:["React", "Tailwind CSS", "MyMemory API"],
      reflections:["Integrating external translation APIs", " Managing state and form inputs in React", " Handling loading and error states gracefully"],
      code:"https://kbnkosi.github.io/Translator-App/",
     demo:"https://kbnkosi.github.io/Translator-App/"

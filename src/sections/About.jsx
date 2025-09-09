@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { aboutData } from '../data/about';
 import styles from '../styles/About.module.css'
 
 const About = () => {
-  const [activeTab, setActiveTab] = useState('achievements');
+  const [activeTab, setActiveTab] = useState('summary');
+ 
+  useEffect(()=>{
+    const defaultTab=aboutData.tabs[0].id;
+    setActiveTab(defaultTab);
+  }, []);
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
@@ -11,7 +16,7 @@ const About = () => {
 
   const TabButton = ({ tab, isActive, onClick }) => (
     <button 
-      className={`tabBtn ${isActive ? 'active' : ''}`}
+      className={`${styles.tabBtn} ${isActive ? styles.active : ''}`}
       onClick={() => onClick(tab.id)}
     >
       {tab.label}
@@ -19,7 +24,7 @@ const About = () => {
   );
 
   const SummaryTab = ({ data }) => (
-    <div className={styles.tabContent}>
+    <div>
       <h3>{data.title}</h3>
       {data.paragraphs.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
@@ -28,7 +33,7 @@ const About = () => {
   );
 
   const ExperienceTab = ({ experiences }) => (
-    <div className="tabContent">
+    <div>
       <h3>Work Experience</h3>
       {experiences.map((exp) => (
         <div key={exp.id} className={styles.achievementItem}>
@@ -45,7 +50,7 @@ const About = () => {
   );
 
   const EducationTab = ({ education }) => (
-    <div className={styles.tabContent}>
+    <div>
       <h3>Educational Background</h3>
       {education.map((edu) => (
         <div key={edu.id} className={styles.educationItem}>
@@ -59,7 +64,7 @@ const About = () => {
   );
 
   const AchievementsTab = ({ achievements }) => (
-    <div className={styles.tabContent}>
+    <div>
       <h3>Key Achievements</h3>
       {achievements.map((achievement) => (
         <div key={achievement.id} className={styles.achievementItem}>
@@ -105,9 +110,18 @@ const About = () => {
             ))}
           </div>
 
-          <div className={`tabContent ${activeTab ? 'active' : ''}`}>
-            {renderTabContent()}
-          </div>
+          <div className={styles.tabContent}>
+          {aboutData.tabs.map((tab) => (
+            <div
+              key={tab.id}
+              className={`${styles.tabContentInner} ${
+                activeTab === tab.id ? styles.active : ''
+              }`}
+            >
+              {activeTab === tab.id && renderTabContent()}
+            </div>
+          ))}
+        </div>
         </div>
       </div>
     </section>

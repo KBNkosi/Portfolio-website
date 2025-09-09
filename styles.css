@@ -580,7 +580,7 @@
             background: var(--clr-background);
         }
 
-        .section-subtitle {
+        .sectionSubTitle {
             text-align: center;
             font-size: var(--fs-md);
             color: var(--clr-text-muted);
@@ -843,18 +843,18 @@
             color: white;
         }
 
-        .section-subtitle.light {
+        .sectionSubTitle.light {
             color: rgba(255, 255, 255, 0.8);
         }
 
-        .services-grid {
+        .servicesGrid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: var(--space-xl);
             margin-top: var(--space-xl);
         }
 
-        .service-card {
+        .serviceCard {
             background: rgba(255, 255, 255, 0.1);
             border-radius: var(--radius-lg);
             padding: var(--space-xl);
@@ -866,7 +866,7 @@
             overflow: hidden;
         }
 
-        .service-card::before {
+        .serviceCard::before {
             content: '';
             position: absolute;
             top: 0;
@@ -879,22 +879,22 @@
             z-index: 1;
         }
 
-        .service-card:hover::before {
+        .serviceCard:hover::before {
             opacity: 1;
         }
 
-        .service-card > * {
+        .serviceCard > * {
             position: relative;
             z-index: 2;
         }
 
-        .service-card:hover {
+        .serviceCard:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(255, 96, 2, 0.3);
             border-color: var(--clr-primary);
         }
 
-        .service-icon {
+        .serviceIcon {
             width: 80px;
             height: 80px;
             background: var(--clr-primary);
@@ -907,23 +907,23 @@
             box-shadow: 0 8px 25px rgba(255, 96, 2, 0.3);
         }
 
-        .service-card:hover .service-icon {
+        .serviceCard:hover .serviceIcon {
             background: white;
             transform: scale(1.1);
             box-shadow: 0 12px 35px rgba(255, 255, 255, 0.2);
         }
 
-        .service-icon i {
+        .serviceIcon i {
             font-size: 2rem;
             color: white;
             transition: var(--transition);
         }
 
-        .service-card:hover .service-icon i {
+        .serviceCard:hover .serviceIcon i {
             color: var(--clr-primary);
         }
 
-        .service-title {
+        .serviceTitle {
             font-size: var(--fs-xl);
             font-weight: 700;
             color: white;
@@ -931,11 +931,11 @@
             transition: var(--transition);
         }
 
-        .service-card:hover .service-title {
+        .serviceCard:hover .serviceTitle {
             color: white;
         }
 
-        .service-desc {
+        .serviceDesc {
             font-size: var(--fs-base);
             line-height: 1.7;
             color: rgba(255, 255, 255, 0.8);
@@ -943,11 +943,11 @@
             transition: var(--transition);
         }
 
-        .service-card:hover .service-desc {
+        .serviceCard:hover .serviceDesc {
             color: rgba(255, 255, 255, 0.95);
         }
 
-        .service-features {
+        .serviceFeatures {
             display: flex;
             flex-wrap: wrap;
             gap: var(--space-xs);
@@ -955,7 +955,7 @@
             margin-top: var(--space-md);
         }
 
-        .service-features span {
+        .serviceFeatures span {
             background: rgba(255, 255, 255, 0.2);
             color: rgba(255, 255, 255, 0.9);
             padding: 6px 14px;
@@ -965,7 +965,7 @@
             transition: var(--transition);
         }
 
-        .service-card:hover .service-features span {
+        .serviceCard:hover .serviceFeatures span {
             background: rgba(255, 255, 255, 0.2);
             color: white;
         }
@@ -1276,34 +1276,34 @@
                 padding: var(--space-lg) 0;
             }
 
-            .services-grid {
+            .servicesGrid {
                 grid-template-columns: 1fr;
                 gap: var(--space-lg);
             }
 
-            .service-card {
+            .serviceCard {
                 padding: var(--space-lg);
             }
 
-            .service-icon {
+            .serviceIcon {
                 width: 70px;
                 height: 70px;
                 margin-bottom: var(--space-md);
             }
 
-            .service-icon i {
+            .serviceIcon i {
                 font-size: 1.6rem;
             }
 
-            .service-title {
+            .serviceTitle {
                 font-size: var(--fs-lg);
             }
 
-            .service-features {
+            .serviceFeatures {
                 gap: var(--space-xs);
             }
 
-            .service-features span {
+            .serviceFeatures span {
                 font-size: 12px;
                 padding: 4px 10px;
             }

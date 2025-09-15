@@ -5,10 +5,10 @@ import {projects} from '../data/projectsData'
 import PageTransition from '../components/PageTransition'
 const Projects = () => {
   return (
-    <PageTransition>
-     <section className={styles.portfolio}>
-      <div className={styles.container}>
-        <h2 className="section-title">My Portfolio</h2>
+    
+     <section className='section'>
+      <div className='container'>
+               <h2 className="section-title">My Portfolio</h2>
         <p className="section-subtitle">
           Explore my latest projects and creative solutions
         </p>
@@ -19,8 +19,10 @@ const Projects = () => {
           ))}
         </div>
       </div>
+        
+      
     </section>
-    </PageTransition>
+  
     
   )
 }

@@ -1,25 +1,12 @@
  /* Services Section */
         .services {
-            padding: var(--space-xl) 0;
-            background: var(--clr-dark-grey);
-            border-radius: 60px 60px 0 0;
-            margin-top: var(--space-xl);
-            position: relative;
+             background: var(--clr-dark-grey);
+    border-radius: 60px;
+    padding: var(--space-xl) var(--space-lg);
+    margin-top: var(--space-lg);
+    position: relative;
         }
 
-        .services .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--space-lg);
-        }
-
-        .sectionTitle.light {
-            color: white;
-        }
-
-        .sectionSubTitle.light {
-            color: rgba(255, 255, 255, 0.8);
-        }
 
         .servicesGrid {
             display: grid;
@@ -29,7 +16,6 @@
         }
 
         .serviceCard {
-            aspect-ratio: 1;
             max-width: 350px;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.1);

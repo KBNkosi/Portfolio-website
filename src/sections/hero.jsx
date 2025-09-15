@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from '../styles/Hero.module.css';
+import React from "react";
+import styles from "../styles/Hero.module.css";
 
 // Capitalize component name (React convention)
 const Hero = () => {
@@ -13,8 +13,8 @@ const Hero = () => {
           </h1>
           <p className={styles.heroText}>
             I'm an experienced Frontend Developer with 3+ years in the field,
-            crafting intuitive, responsive, and user-friendly web experiences that
-            bring ideas to life.
+            crafting intuitive, responsive, and user-friendly web experiences
+            that bring ideas to life.
           </p>
           <div className={styles.btnContainer}>
             <a href="#projects" className={`${styles.btn} ${styles.btnColor2}`}>
@@ -30,8 +30,20 @@ const Hero = () => {
         <div className={styles.heroImgContainer}>
           <div className={styles.heroImgBg} />
           <div className={styles.badgeContainer}>
-            <span className={`${styles.badge} ${styles.badge1}`}>UI/UX Designer</span>
-            <span className={`${styles.badge} ${styles.badge2}`}>Frontend Developer</span>
+            <div className={`${styles.heroBadge} ${styles.badgeTopLeft}`}>
+              <i className="fa-solid fa-code"></i>
+              <span>Web Development</span>
+            </div>
+
+            <div className={`${styles.heroBadge} ${styles.badgeTopRight}`}>
+              <i className="fa-solid fa-cart-shopping"></i>
+              <span>E-commerce</span>
+            </div>
+
+            <div className={`${styles.heroBadge} ${styles.badgeBottomLeft}`}>
+              <i className="fa-solid fa-magnifying-glass"></i>
+              <span>SEO</span>
+            </div>
           </div>
           <img
             src="/images/graduate-photo.png"
@@ -44,36 +56,37 @@ const Hero = () => {
       <div className={styles.skills}>
         <div className={styles.skillsGrid}>
           {[
-            { icon: 'fa-brands fa-html5', name: 'HTML5' },
-            { icon: 'fa-brands fa-css3-alt', name: 'CSS3' },
-            { icon: 'fa-brands fa-js', name: 'JavaScript' },
-            { icon: 'fa-brands fa-react', name: 'React' },
-            { icon: 'fa-solid fa-mobile-alt', name: 'FlutterFlow' },
-            { icon: 'fa-brands fa-node-js', name: 'Node.js' },
-            { icon: 'fa-brands fa-git-alt', name: 'Git' },
-            { icon: 'fa-brands fa-figma', name: 'Figma' }
-          ].map((skill, index) => (
-            <div key={index} className={styles.skillItem}>
-              <i className={skill.icon} />
-              {skill.name}
-            </div>
-          )).concat(
-            // Duplicate items for seamless loop
-            [
-              { icon: 'fa-brands fa-html5', name: 'HTML5' },
-              { icon: 'fa-brands fa-css3-alt', name: 'CSS3' },
-              { icon: 'fa-brands fa-js', name: 'JavaScript' },
-              { icon: 'fa-brands fa-react', name: 'React' },
-              { icon: 'fa-brands fa-node-js', name: 'Node.js' },
-              { icon: 'fa-brands fa-git-alt', name: 'Git' },
-              { icon: 'fa-brands fa-figma', name: 'Figma' }
-            ].map((skill, index) => (
-              <div key={`dup-${index}`} className={styles.skillItem}>
-                <i className={skill.icon} />
-                {skill.name}
+            { icon: "fa-solid fa-laptop-code", name: "Web Development" },
+            { icon: "fa-solid fa-cart-shopping", name: "E-commerce Solutions" },
+            { icon: "fa-solid fa-magnifying-glass", name: "SEO Optimization" },
+            { icon: "fa-solid fa-wrench", name: "Maintenance & Support" },
+          ]
+            .map((service, index) => (
+              <div key={index} className={styles.skillItem}>
+                <i className={service.icon} />
+                {service.name}
               </div>
             ))
-          )}
+            .concat(
+              // Duplicate items for seamless loop
+              [
+                { icon: "fa-solid fa-laptop-code", name: "Web Development" },
+                {
+                  icon: "fa-solid fa-cart-shopping",
+                  name: "E-commerce Solutions",
+                },
+                {
+                  icon: "fa-solid fa-magnifying-glass",
+                  name: "SEO Optimization",
+                },
+                { icon: "fa-solid fa-wrench", name: "Maintenance & Support" },
+              ].map((service, index) => (
+                <div key={`dup-${index}`} className={styles.skillItem}>
+                  <i className={service.icon} />
+                  {service.name}
+                </div>
+              ))
+            )}
         </div>
       </div>
     </section>

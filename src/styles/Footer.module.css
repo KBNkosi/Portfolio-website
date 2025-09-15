@@ -38,6 +38,26 @@
     gap: var(--space-sm);
 }
 
+.socialLink {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: var(--fs-md);
+}
+
+.socialLink:hover {
+    background: var(--clr-primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
 .footer h3 {
     color: white;
     font-size: var(--fs-lg);
@@ -123,6 +143,12 @@
 
     .footerSocial {
         justify-content: center;
+        gap: var(--space-md);
+    }
+
+    .socialLink {
+        width: 45px;  /* Slightly larger on mobile for better touch targets */
+        height: 45px;
     }
 
     .footer h3 {

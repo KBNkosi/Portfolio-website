@@ -1,15 +1,15 @@
 import React, { useState, useRef } from 'react';
 import styles from '../styles/Projects.module.css';
+import { video } from 'framer-motion/client';
 
 const ProjectCard = ({ project }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isVideoVisible, setIsVideoVisible] = useState(false);
   const videoRef = useRef(null);
 
   const handleMouseEnter = () => {
     if (videoRef.current) {
       videoRef.current.play();
-      setIsVideoVisible(true);
+      videoRef.current.classList.add(styles.visible);
     }
   };
 
@@ -17,30 +17,37 @@ const ProjectCard = ({ project }) => {
     if (videoRef.current) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
-      setIsVideoVisible(false);
+      videoRef.current.classList.remove(styles.visible);
     }
   };
 
   return (
-    <div className={styles.projectCard}>
-      <div 
-        className={styles.projectMedia}
-        onMouseEnter={handleMouseEnter}
+    <div 
+    className={styles.projectCard}
+    onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-      >
-        <div className={`${styles.projectImage} ${isVideoVisible ? styles.hidden : ''}`}>
-          <img src={project.img} alt={project.title} />
-        </div>
+    >
+      <div className={styles.projectMedia}>
+        {/*Thumbnail image */}
+          <img src={project.img} alt={project.title} className={`${styles.projectImage}`}/>
+         {/*Hover Video */} 
         {project.videoUrl && (
-          <div className={`${styles.projectVideo} ${isVideoVisible ? styles.visible : ''}`}>
-            <iframe
-              ref={videoRef}
-              src={`${project.videoUrl}?autoplay=0&controls=0&loop=1`}
-              frameBorder="0"
-              allowFullScreen
-              style={{ width: '100%', height: '100%' }}
+          <video 
+          ref={videoRef}
+          className={`${styles.projectVideo}`}
+          muted
+          loop
+          playsInline
+          >
+            <source src={project.videoUrl} type='video/webm' />
+            <source 
+             src={project.videoUrl.replace(".webm", ".mp4")}
+             type="video/mp4"
             />
-          </div>
+
+            Your browser does not support video playback
+
+          </video>
         )}
       </div>
 

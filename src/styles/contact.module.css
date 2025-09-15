@@ -18,11 +18,7 @@
     box-shadow: var(--shadow-md);
 }
 
-.sectionTitle {
-    font-size: var(--fs-2xl);
-    margin-bottom: var(--space-md);
-    color: var(--clr-text);
-}
+
 
 .contactIntro {
     color: var(--clr-text-muted);
@@ -92,9 +88,7 @@
         padding: var(--space-lg) var(--space-md);
     }
 
-    .sectionTitle {
-        font-size: var(--fs-xl);
-    }
+    
 
     .contactItem {
         flex-direction: column;

@@ -6,9 +6,9 @@ const Contact = () => {
   return (
     <PageTransition>
        <section className={styles.contact}>
-      <div className={`${styles.container} ${styles.contactContainer}`}>
+      <div className='container'>
         <div className={styles.contactInfo}>
-          <h2 className={styles.sectionTitle}>Let's Work Together</h2>
+          <h2 className='section-title'>Let's Work Together</h2>
           <p className={styles.contactIntro}>
             I'm open to freelance opportunities and junior positions.
             <br />

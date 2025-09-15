@@ -3,24 +3,6 @@
     background: var(--clr-surface);
 }
 
-.container{
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
-}
-
-.sectionTitle {
-    text-align: center;
-    font-size: var(--fs-2xl);
-    color: var(--clr-text);
-    margin-bottom: var(--space-sm);
-}
-
-.sectionSubTitle {
-    text-align: center;
-    color: var(--clr-text-muted);
-    margin-bottom: var(--space-xl);
-}
 
 .techGrid {
     display: grid;

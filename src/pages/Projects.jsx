@@ -8,8 +8,8 @@ const Projects = () => {
     <PageTransition>
      <section className={styles.portfolio}>
       <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>My Portfolio</h2>
-        <p className={styles.sectionSubtitle}>
+        <h2 className="section-title">My Portfolio</h2>
+        <p className="section-subtitle">
           Explore my latest projects and creative solutions
         </p>
         

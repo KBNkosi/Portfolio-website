@@ -9,26 +9,6 @@
   margin: 0 auto;
 }
 
-.sectionTitle {
-  text-align: center;
-  font-size: var(--fs-3xl);
-  font-weight: 700;
-  color: var(--clr-text);
-  margin-bottom: var(--space-xl);
-  position: relative;
-}
-
-.sectionTitle::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: var(--clr-primary);
-  border-radius: 2px;
-}
 
 .tabsContainer {
   background: var(--clr-background);

@@ -3,15 +3,6 @@
             background: var(--clr-background);
         }
 
-        .sectionSubtitle {
-            text-align: center;
-            font-size: var(--fs-md);
-            color: var(--clr-text-muted);
-            margin-bottom: var(--space-xl);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
 
         .portfolioGrid {
             display: grid;
@@ -38,7 +29,7 @@
         .projectMedia {
             position: relative;
             width: 100%;
-            height: 250px;
+            height: 100%;
             overflow: hidden;
             border-radius: var(--radius) var(--radius) 0 0;
         }
@@ -64,6 +55,7 @@
             height: 100%;
             opacity: 0;
             transition: opacity 0.3s ease;
+            /* object-fit: cover; */
         }
 
         .projectVideo.visible {
@@ -90,7 +82,7 @@
             background: rgba(0,0,0,0.95);
         }
 
-        .expand-btn {
+        .expandBtn {
             position: absolute;
             top: -20px;
             left: 50%;
@@ -107,31 +99,32 @@
             z-index: 4;
         }
 
-        .expand-btn:hover {
+        .expandBtn:hover {
             transform: translateX(-50%) scale(1.1);
             background: var(--clr-primary-hover);
         }
 
-        .expand-btn i {
+        .expandBtn i {
             color: white;
             font-size: var(--fs-base);
             transition: var(--transition);
         }
 
-        .projectDescription.expanded .expand-btn i {
+        .projectDescription.expanded .expandBtn i {
             transform: rotate(180deg);
         }
 
         .projectContent {
             padding: var(--space-lg);
             height: 100%;
-            overflow-y: auto;
             color: white;
         }
 
         .projectSummary {
             opacity: 1;
             transition: var(--transition);
+            max-height: 200px;
+            overflow: hidden;
         }
 
         .projectDetails {
@@ -142,8 +135,7 @@
             top: var(--space-lg);
             left: var(--space-lg);
             right: var(--space-lg);
-            bottom: var(--space-lg);
-            overflow-y: auto;
+           
         }
 
         .projectDescription.expanded .projectSummary {
@@ -157,9 +149,9 @@
         }
 
         .projectContent h3 {
-            font-size: var(--fs-xl);
+            font-size: var(--fs-lg);
             font-weight: 700;
-            margin-bottom: var(--space-sm);
+            margin-bottom: var(--space-xs);
             color: white;
         }
 

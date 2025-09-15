@@ -2,7 +2,7 @@ export const projects=[
     {id:1,
      title:" Ecommerce Product UI",
      img:"./images/products.png",
-     videoUrl:"https://www.loom.com/embed/db66230d04604d0fbf6665570863e1aa?sid=d346b18a-c4b5-4844-8754-c253fb8e8b7b",
+     videoUrl:"videos/ecommerce-ui.webm",
      description:`A responsive product listing page app. It fetches products
                   from a public API and displays them in reusable cards with
                   expandable descriptions`,
@@ -15,6 +15,7 @@ export const projects=[
      {id:2,
      title:"Translator Application",
      img:"./images/translate-app.png",
+     videoUrl:"videos/translator-app.webm",
      description:`A React-based translation interface that lets users input
                   text, select source and target languages, and receive
                   translations using a public API.`,
@@ -27,6 +28,7 @@ export const projects=[
     {id:3,
      title:"Coffee List Page",
      img:"./images/translate-app.png",
+     videoUrl:"videos/coffee-listing.webm",
      description:`  A React frontend that fetches coffee items from a public API
                   and displays them with clean cards, images, and pricing.`,
      technologies:["React", "Tailwind CSS", "Fetch API"],

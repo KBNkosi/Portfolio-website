@@ -95,8 +95,8 @@ const About = () => {
 
   return (
     <section className={styles.about}>
-      <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>About Me</h2>
+      <div className='container'>
+        <h2 className='section-title'>About Me</h2>
 
         <div className={styles.tabsContainer}>
           <div className={styles.tabButtons}>

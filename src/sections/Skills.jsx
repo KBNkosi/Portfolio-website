@@ -4,9 +4,9 @@ import styles from '../styles/Skills.module.css'
 const Skills = () => {
   return (
     <section className={styles.skillsSection}>
-      <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>My Tech Stack</h2>
-        <p className={styles.sectionSubTitle}>Technologies I work with</p>
+      <div className='container'>
+        <h2 className='section-title'>My Tech Stack</h2>
+        <p className='section-subtitle'>Technologies I work with</p>
         <div className={styles.techGrid}>
           {/* Frontend */}
           <div className={styles.techCategory}>

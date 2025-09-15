@@ -1,7 +1,8 @@
-const projects=[
+export const projects=[
     {id:1,
      title:" Ecommerce Product UI",
      img:"./images/products.png",
+     videoUrl:"https://www.loom.com/embed/db66230d04604d0fbf6665570863e1aa?sid=d346b18a-c4b5-4844-8754-c253fb8e8b7b",
      description:`A responsive product listing page app. It fetches products
                   from a public API and displays them in reusable cards with
                   expandable descriptions`,
@@ -34,7 +35,5 @@ const projects=[
     demo:"https://kbnkosi.github.io/Coffee-list-Project/"
     },
 
-    
-
-    
 ]
+

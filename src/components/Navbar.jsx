@@ -1,10 +1,10 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 import styles from "../styles/Navbar.module.css"
 const Navbar = () => {
   return (
      <header className={styles.navContainer}>
   <nav className={styles.navbar}>
-    <div className="logo">
+    <div className={styles.logo}>
       <svg
         width={48}
         height={48}
@@ -33,15 +33,26 @@ const Navbar = () => {
     </button>
     <ul className={styles.navLinks}>
       <li>
-        <a href="index.html" className={styles.active}>
-          Home
-        </a>
+        <NavLink to="/"
+         className={({IsActive})=> IsActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+         >
+              Home
+        </NavLink>
       </li>
       <li>
-        <a href="projects.html">Projects</a>
+        <NavLink to="/projects"
+         className={({IsActive})=> IsActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+         >
+              Projects
+        </NavLink>
       </li>
+
       <li>
-        <a href="Contact.html">Contact</a>
+        <NavLink to="/contact"
+         className={({IsActive})=> IsActive ? `${styles.navLink} ${styles.active}` : styles.navLink}
+         >
+              Contact
+        </NavLink>
       </li>
     </ul>
     <a

@@ -172,9 +172,92 @@
   margin-bottom: 0;
 }
 
-
+/*responsiveness*/
 @media (max-width: 768px){
-    .tabsContainer{
-        min-height: 700px;
-    }
+    .about {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .sectionTitle {
+    font-size: var(--fs-2xl);
+    margin-bottom: var(--space-lg);
+  }
+
+  .tabsContainer {
+    padding: var(--space-md);
+    min-height: auto;
+    margin: 0 var(--space-sm);
+  }
+
+  .tabButtons {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: var(--space-sm);
+    margin-bottom: var(--space-md);
+    gap: var(--space-xs);
+  }
+
+  .tabBtn {
+    padding: var(--space-sm) var(--space-md);
+    min-width: auto;
+    font-size: var(--fs-sm);
+  }
+
+  .tabContent {
+    min-height: 500px;
+  }
+
+  .tabContentInner {
+    padding: var(--space-sm);
+  }
+
+  .tabContent h3 {
+    font-size: var(--fs-lg);
+    margin-bottom: var(--space-md);
+  }
+
+  .achievementItem,
+  .educationItem {
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+  }
+
+  .achievementItem h4,
+  .educationItem h4 {
+    font-size: var(--fs-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .tabsContainer {
+    padding: var(--space-sm);
+    margin: 0;
+  }
+
+  .tabBtn {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--fs-sm);
+  }
+
+  .tabContent p {
+    font-size: var(--fs-sm);
+    line-height: 1.6;
+  }
+
+  .achievementMeta {
+    font-size: var(--fs-xs);
+  }
+
+  .achievementItem p,
+  .educationItem p {
+    font-size: var(--fs-sm);
+  }
 }

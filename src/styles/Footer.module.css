@@ -1,0 +1,146 @@
+.footer {
+    background: var(--clr-dark-grey);
+    color: white;
+    padding-top: var(--space-xl);
+}
+
+.footerContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+
+.footerBrand {
+    max-width: 400px;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.footerLogo span {
+    font-size: var(--fs-lg);
+    font-weight: 600;
+}
+
+.footerDesc {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--space-lg);
+    line-height: 1.6;
+}
+
+.footerSocial {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.footer h3 {
+    color: white;
+    font-size: var(--fs-lg);
+    margin-bottom: var(--space-lg);
+    position: relative;
+    padding-bottom: var(--space-xs);
+}
+
+.footer h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--clr-primary);
+}
+
+.footerLinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li {
+    margin-bottom: var(--space-sm);
+}
+
+.footerLinks a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footerLinks a:hover {
+    color: var(--clr-primary);
+    padding-left: var(--space-xs);
+}
+
+.footerContact .contactInfo p {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footerContact .contactInfo a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footerContact .contactInfo a:hover {
+    color: var(--clr-primary);
+}
+
+.footerBottom {
+    padding: var(--space-md) 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerBottom p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--fs-sm);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footerContent {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .footerBrand {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footerLogo {
+        justify-content: center;
+    }
+
+    .footerSocial {
+        justify-content: center;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+    .footer h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footerLinks ul {
+        text-align: center;
+    }
+
+    .footerContact .contactInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -16,7 +16,7 @@ const ServiceCard = ({ icon, title, description}) => (
 const Services = () => {
   return (
     <section className='section'>
-      <div className='container'>
+      <div className={styles.container}>
         <h2 className='section-title'>
           Services I Provide
         </h2>

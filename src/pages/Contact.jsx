@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from '../styles/Contact.module.css'
-import PageTransition from '../components/PageTransition'
+
 
 const Contact = () => {
   return (
-    <PageTransition>
+    
       <section className="section">
         <div className="container">
           <h2 className="section-title">Let's Work Together</h2>
@@ -47,16 +47,16 @@ const Contact = () => {
               <div className={styles.socialLinks}>
                 <h4>Follow Me</h4>
                 <div className={styles.socialIcons}>
-                  <a href="#" className={styles.socialLink}>
+                  <a href="www.linkedin.com/in/kennynkosi" className={styles.socialLinks} name="linkedin">
                     <i className="fab fa-linkedin-in" />
                   </a>
-                  <a href="#" className={styles.socialLink}>
+                  <a href="https://github.com/KBNkosi" className={styles.socialLinks} name="github">
                     <i className="fab fa-github" />
                   </a>
-                  <a href="#" className={styles.socialLink}>
+                  <a href="#" className={styles.socialLinks} name="twitter">
                     <i className="fab fa-twitter" />
                   </a>
-                  <a href="#" className={styles.socialLink}>
+                  <a href="https://www.instagram.com/kennybhekumuzi/" className={styles.socialLinks} name="instagram">
                     <i className="fab fa-instagram" />
                   </a>
                 </div>
@@ -117,7 +117,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </PageTransition>
+    
   )
 }
 

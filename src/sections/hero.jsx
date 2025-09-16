@@ -9,12 +9,10 @@ const Hero = () => {
         <div className={styles.heroDescription}>
           <small className={styles.heroSmallText}>Hello There!</small>
           <h1 className={styles.title}>
-            I'm Kenny Nkosi<span>Frontend Developer</span>Based in SA
+            I'm Kenny Nkosi<span>Web Developer</span>Based in SA
           </h1>
           <p className={styles.heroText}>
-            I'm an experienced Frontend Developer with 3+ years in the field,
-            crafting intuitive, responsive, and user-friendly web experiences
-            that bring ideas to life.
+          Passionate web developer crafting intuitive, responsive, and user-friendly web experiences that bring ideas to life.
           </p>
           <div className={styles.btnContainer}>
             <a href="#projects" className={`${styles.btn} ${styles.btnColor2}`}>

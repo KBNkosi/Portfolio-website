@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Projects.module.css'
 import ProjectCard from '../components/ProjectCard'
 import {projects} from '../data/projectsData'
-import PageTransition from '../components/PageTransition'
+
 const Projects = () => {
   return (
     

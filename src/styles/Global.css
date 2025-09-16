@@ -11,21 +11,21 @@
 
   /* Typography */
   --ff-primary: 'Poppins', sans-serif;
-  --fs-xs: 0.75rem;    /* 12px */
-  --fs-sm: 0.875rem;   /* 14px */
-  --fs-base: 1rem;     /* 16px */
-  --fs-md: 1.125rem;   /* 18px */
-  --fs-lg: 1.25rem;    /* 20px */
-  --fs-xl: 1.5rem;     /* 24px */
-  --fs-2xl: 2rem;      /* 32px */
-  --fs-3xl: 2.5rem;    /* 40px */
+  --fs-xs: 0.75rem;    
+  --fs-sm: 0.875rem;   
+  --fs-base: 1rem;     
+  --fs-md: 1.125rem;   
+  --fs-lg: 1.25rem;    
+  --fs-xl: 1.5rem;     
+  --fs-2xl: 2rem;      
+  --fs-3xl: 2.5rem;    
 
   /* Spacing */
-  --space-xs: 0.5rem;   /* 8px */
-  --space-sm: 1rem;     /* 16px */
-  --space-md: 1.5rem;   /* 24px */
-  --space-lg: 2rem;     /* 32px */
-  --space-xl: 3rem;     /* 48px */
+  --space-xs: 0.5rem;   
+  --space-sm: 1rem;     
+  --space-md: 1.5rem;   
+  --space-lg: 2rem;     
+  --space-xl: 3rem;     
 
   /* Layout */
   --max-width: 1200px;
@@ -77,21 +77,25 @@ body {
 .section-title {
   font-size: var(--fs-2xl);
   text-align: center;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, var(--clr-primary), #ff8c00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  padding-bottom: var(--space-sm);
+  width: 100%;
+  
 }
 
 
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: var(--clr-primary);
-  border-radius: 2px;
-}
+
+
+
 
 .section-subtitle {
   font-size: var(--fs-md);
@@ -102,43 +106,7 @@ body {
   margin-inline: auto;
 }
 
-/* Button Styles */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-xs);
-  padding: var(--space-sm) var(--space-lg);
-  border-radius: var(--radius);
-  font-weight: 500;
-  transition: var(--transition);
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
-}
 
-.btnPrimary {
-  background: var(--clr-primary);
-  color: white;
-}
-
-.btnOutline {
-  border: 2px solid var(--clr-primary);
-  color: var(--clr-primary);
-}
-
-/* Card Styles */
-.card {
-  background: var(--clr-surface);
-  border-radius: var(--radius);
-  padding: var(--space-lg);
-  box-shadow: var(--shadow-md);
-}
-
-/* Grid Utilities */
-.grid {
-  display: grid;
-  gap: var(--space-lg);
-}
 
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {

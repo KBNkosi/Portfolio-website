@@ -1,10 +1,15 @@
  /* Services Section */
         .services {
              background: var(--clr-dark-grey);
-    border-radius: 60px;
+             width: 100%;
     padding: var(--space-xl) var(--space-lg);
     margin-top: var(--space-lg);
     position: relative;
+        }
+
+        .container{
+            margin: 0 auto;
+  padding: 0 var(--space-lg);
         }
 
 

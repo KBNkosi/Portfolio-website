@@ -36,16 +36,16 @@ const Footer = () => {
             technologies.
           </p>
           <div className={styles.footerSocial}>
-            <a href="#" className={styles.socialLink}>
+            <a href="www.linkedin.com/in/kennynkosi" className={styles.socialLink}>
               <i className="fab fa-linkedin-in" />
             </a>
-            <a href="#" className={styles.socialLink}>
+            <a href="https://github.com/KBNkosi" className={styles.socialLink}>
               <i className="fab fa-github" />
             </a>
             <a href="#" className={styles.socialLink}>
               <i className="fab fa-twitter" />
             </a>
-            <a href="#" className={styles.socialLink}>
+            <a href="https://www.instagram.com/kennybhekumuzi/" className={styles.socialLink}>
               <i className="fab fa-instagram" />
             </a>
           </div>

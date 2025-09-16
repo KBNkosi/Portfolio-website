@@ -50,14 +50,32 @@
     text-decoration: none;
     transition: var(--transition);
     font-size: var(--fs-md);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .socialLink:hover {
     background: var(--clr-primary);
     color: white;
     transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: transparent;
 }
 
+.socialLink:nth-child(1):hover{
+    background: #0a66c2;
+}
+
+.socialLink:nth-child(2):hover{
+    background: #333;
+}
+
+.socialLink:nth-child(3):hover{
+    background: #1da1f2;
+}
+
+.socialLink:nth-child(4):hover{
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
 .footer h3 {
     color: white;
     font-size: var(--fs-lg);

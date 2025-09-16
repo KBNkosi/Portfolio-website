@@ -35,24 +35,7 @@ const Skills = () => {
             </div>
           </div>
 
-          {/* Backend */}
-          <div className={styles.techCategory}>
-            <h3>Backend</h3>
-            <div className={styles.techIcons}>
-              <div className={styles.techIcon} title="Node.js">
-                <i className="fa-brands fa-node-js" style={{ color: "#339933" }} />
-                <span>Node.js</span>
-              </div>
-              <div className={styles.techIcon} title="Python">
-                <i className="fa-brands fa-python" style={{ color: "#3776AB" }} />
-                <span>Python</span>
-              </div>
-              <div className={styles.techIcon} title="MongoDB">
-                <i className="fa-solid fa-database" style={{ color: "#47A248" }} />
-                <span>MongoDB</span>
-              </div>
-            </div>
-          </div>
+         
 
           {/* Tools */}
           <div className={styles.techCategory}>

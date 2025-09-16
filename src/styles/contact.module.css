@@ -72,6 +72,100 @@
     color: var(--clr-primary);
 }
 
+.socialLinks{
+    margin-top: var(--space-xl);
+}
+
+.socialLinks h4{
+    color: var(--clr-text);
+    margin-bottom: var(--space-md);
+    font-size: var(--fs-md);
+}
+
+.socialIcons{
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.socialIcons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--clr-background);
+    color: var(--clr-text);
+    font-size: var(--fs-lg);
+    transition: all 0.3s ease;
+    border: 1px solid var(--clr-border);
+}
+
+.socialIcons a:hover{
+    background: var(--clr-primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border:transparent;
+}
+
+
+.socialLinks {
+  margin-top: var(--space-xl);
+}
+
+.socialLinks h4 {
+  color: var(--clr-text);
+  margin-bottom: var(--space-md);
+  font-size: var(--fs-md);
+}
+
+.socialIcons {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--clr-background);
+  color: var(--clr-text);
+  font-size: var(--fs-lg);
+  transition: all 0.3s ease;
+  border: 1px solid var(--clr-border);
+}
+
+.socialIcons a:hover {
+  background: var(--clr-primary);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+
+
+.socialIcons a[name*="linkedin"]:hover {
+  background: #0a66c2;
+}
+
+.socialIcons a[name*="github"]:hover {
+  background: #333;
+}
+
+.socialIcons a[name*="twitter"]:hover {
+  background: #1da1f2;
+}
+
+.socialIcons a[name*="instagram"]:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
 /* Media Queries */
 @media (max-width: 968px) {
     .contactContainer {
@@ -80,7 +174,7 @@
     }
 
     .contactInfo {
-        order: -1; /* Moves contact info to top on mobile */
+        order: -1; 
     }
 
     .contactDetails {
@@ -94,7 +188,7 @@
     }
 
     .contactInfo {
-        order: -1; /* Moves contact info to top on mobile */
+        order: -1; 
     }
 
     .contactItem {
@@ -125,7 +219,6 @@
     }
 }
 
-/* Form Styles - Make sure these exist */
 .contactForm {
     background: var(--clr-surface);
     padding: var(--space-lg);
@@ -162,12 +255,16 @@
     }
 
     .contactInfo {
-        order: -1; /* Moves contact info to top on mobile */
+        order: -1; 
     }
 
     .contactItem {
         flex-direction: row;
         text-align: left;
+    }
+
+    .socialIcons{
+        justify-content: flex-start;
     }
 }
 
@@ -182,6 +279,16 @@
         width: 40px;
         height: 40px;
         font-size: var(--fs-lg);
+    }
+
+    .socialIcons{
+        justify-content: center;
+    }
+
+    .socialIcons a{
+        width: 40px;
+        height: 40px;
+        font-size: var(--fs-md);
     }
 }
 

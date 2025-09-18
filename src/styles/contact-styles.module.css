@@ -1,0 +1,216 @@
+/* Copied from Contact.module.css but with a different name */
+.contact {
+    padding: var(--space-xl) var(--space-lg);
+    background: var(--clr-background);
+}
+
+.contactContainer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-xl);
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-xl);
+}
+
+.contactInfo,
+.contactForm {
+    background: var(--clr-surface);
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+}
+
+.contactIntro {
+    color: var(--clr-text-muted);
+    margin-bottom: var(--space-lg);
+    line-height: 1.6;
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.contactIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 96, 2, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-primary);
+    font-size: var(--fs-xl);
+}
+
+.contactContent h4 {
+    color: var(--clr-text);
+    margin-bottom: 4px;
+}
+
+.contactContent a,
+.contactContent span {
+    color: var(--clr-text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contactContent a:hover {
+    color: var(--clr-primary);
+}
+
+.socialLinks {
+    margin-top: var(--space-xl);
+}
+
+.socialLinks h4 {
+    color: var(--clr-text);
+    margin-bottom: var(--space-md);
+    font-size: var(--fs-md);
+}
+
+.socialIcons {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.socialIcons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--clr-background);
+    color: var(--clr-text);
+    font-size: var(--fs-lg);
+    transition: var(--transition);
+}
+
+.socialIcons a:hover {
+    background: var(--clr-primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Form Styles */
+.formGroup {
+    margin-bottom: var(--space-lg);
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--clr-text);
+    font-weight: 500;
+}
+
+.formControl {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-sm);
+    background: var(--clr-background);
+    color: var(--clr-text);
+    font-size: var(--fs-md);
+    transition: var(--transition);
+}
+
+.formControl:focus {
+    outline: none;
+    border-color: var(--clr-primary);
+    box-shadow: 0 0 0 3px rgba(255, 96, 2, 0.1);
+}
+
+textarea.formControl {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submitBtn {
+    background: var(--clr-primary);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: var(--radius);
+    font-size: var(--fs-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.submitBtn:hover {
+    background: var(--clr-primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contactGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contactInfo {
+        order: 2;
+    }
+    
+    .contactForm {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactContainer {
+        padding: 0 var(--space-md);
+    }
+    
+    .contactItem {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contactIcon {
+        margin: 0 auto;
+    }
+    
+    .socialIcons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactItem {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-sm);
+    }
+    
+    .contactIcon {
+        width: 40px;
+        height: 40px;
+        font-size: var(--fs-lg);
+    }
+    
+    .submitBtn {
+        width: 100%;
+        justify-content: center;
+    }
+}

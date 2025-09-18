@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import styles from '../styles/Projects.module.css';
-import { video } from 'framer-motion/client';
+
 
 const ProjectCard = ({ project }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -28,9 +28,15 @@ const ProjectCard = ({ project }) => {
         onMouseLeave={handleMouseLeave}
     >
       <div className={styles.projectMedia}>
-        {/*Thumbnail image */}
-          <img src={project.img} alt={project.title} className={`${styles.projectImage}`}/>
-         {/*Hover Video */} 
+        {/* Thumbnail image */}
+        <div className={styles.projectImage}>
+          <img 
+            src={project.img} 
+            alt={project.title} 
+            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+          />
+        </div>
+        {/* Hover Video */} 
         {project.videoUrl && (
           <video 
           ref={videoRef}

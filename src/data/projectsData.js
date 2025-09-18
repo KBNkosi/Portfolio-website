@@ -27,7 +27,7 @@ export const projects=[
 
     {id:3,
      title:"Coffee List Page",
-     img:"./images/translate-app.png",
+     img:"./images/coffee-page.png",
      videoUrl:"videos/coffee-listing.webm",
      description:`  A React frontend that fetches coffee items from a public API
                   and displays them with clean cards, images, and pricing.`,

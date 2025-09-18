@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Hero.module.css";
 
-// Capitalize component name (React convention)
+
 const Hero = () => {
   return (
     <section className={styles.hero}>

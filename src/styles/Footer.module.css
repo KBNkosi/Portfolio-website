@@ -13,6 +13,7 @@
 
 .footerBrand {
     max-width: 400px;
+    padding-left: var(--space-sm);
 }
 
 .footerLogo {

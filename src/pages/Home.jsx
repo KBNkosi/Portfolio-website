@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "../sections/hero";
+import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Services from "../sections/Services";
 import Skills from "../sections/Skills";
 
-const home = () => {
+const Home = () => {
   return (
  
       <main>
@@ -17,4 +17,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

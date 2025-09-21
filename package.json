@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/KBNkosi/Portfolio-website.git",
+  "homepage": "https://kbnkosi.github.io/Portfolio-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

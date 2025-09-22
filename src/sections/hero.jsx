@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Hero.module.css";
+import heroImage from "../assets/images/graduate-photo.png";
 
 
 const Hero = () => {
@@ -44,7 +45,7 @@ const Hero = () => {
             </div>
           </div>
           <img
-            src="/images/graduate-photo.png"
+            src={heroImage}
             className={styles.heroImg}
             alt="Kenny Nkosi profile picture"
           />

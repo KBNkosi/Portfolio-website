@@ -34,20 +34,28 @@ const ProjectCard = ({ project }) => {
             src={project.img} 
             alt={project.title} 
             style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+            onError={(e) => {
+              console.error('Error loading image:', project.img);
+              e.target.alt = 'Image not available';
+            }}
           />
         </div>
         {/* Hover Video */} 
         {project.videoUrl && (
           <video 
-          ref={videoRef}
-          className={`${styles.projectVideo}`}
-          muted
-          loop
-          playsInline
+            ref={videoRef}
+            className={`${styles.projectVideo}`}
+            muted
+            loop
+            playsInline
+            onError={(e) => {
+              console.error('Error loading video:', project.videoUrl);
+              e.target.style.display = 'none';
+            }}
           >
             <source src={project.videoUrl} type='video/webm' />
             <source 
-             src={project.videoUrl.replace(".webm", ".mp4")}
+              src={project.videoUrl.toString().replace(/\.webm$/, '.mp4')}
              type="video/mp4"
             />
 
